@@ -29,8 +29,6 @@ public class UserWorkProfile implements Serializable{
 	@Column(name = "workid")
 	Integer workid;
 
-	@ManyToOne
-    @JoinColumn(name = "userid", referencedColumnName = "userid")
 	@Column(name = "userid")
 	Integer userid;
 	
