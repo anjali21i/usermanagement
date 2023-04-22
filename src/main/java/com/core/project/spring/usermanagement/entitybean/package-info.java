@@ -1,0 +1,1 @@
+package com.core.project.spring.usermanagement.entitybean;
