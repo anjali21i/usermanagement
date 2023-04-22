@@ -26,13 +26,13 @@ public class UserWorkProfile implements Serializable{
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id")
-	Integer id;
+	@Column(name = "workid")
+	Integer workid;
 
 	@ManyToOne
-    @JoinColumn(name = "userId", referencedColumnName = "userId")
-	@Column(name = "userId")
-	Integer userId;
+    @JoinColumn(name = "userid", referencedColumnName = "userid")
+	@Column(name = "userid")
+	Integer userid;
 	
 	@Column(name = "profileGroup")
 	String profileGroup;
@@ -42,5 +42,11 @@ public class UserWorkProfile implements Serializable{
 
 	@Column(name = "DOJ")
 	Date DOJ;
+	
+	@Column(name = "createdate")
+	Date createdate;
+	
+	@Column(name = "modidate")
+	Date modidate;
 
 }

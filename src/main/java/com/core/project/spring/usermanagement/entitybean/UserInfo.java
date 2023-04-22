@@ -1,6 +1,7 @@
 package com.core.project.spring.usermanagement.entitybean;
 
 import java.io.Serializable;
+import java.sql.Date;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -22,8 +23,8 @@ public class UserInfo implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "userId")
-	Integer userId;
+	@Column(name = "userid")
+	Integer userid;
 
 	@Column(name = "name")
 	String name;
@@ -31,10 +32,19 @@ public class UserInfo implements Serializable {
 	@Column(name = "age")
 	Integer age;
 	
+	@Column(name = "gender")
+	String gender;
+	
 	@Column(name = "email")
 	String email;
 
 	@Column(name = "mobile")
 	Long mobile;
+	
+	@Column(name = "createdate")
+	Date createdate;
+	
+	@Column(name = "modidate")
+	Date modidate;
 	
 }
