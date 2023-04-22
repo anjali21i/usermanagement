@@ -1,1 +1,1 @@
-package com.core.project.spring.reactproject.repository;
+ package com.core.project.spring.usermanagement.repository;
