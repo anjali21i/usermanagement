@@ -1,2 +1,2 @@
 # spring-react-project
-Practice project on spring boot with react
+usermanagement project on spring boot with react
